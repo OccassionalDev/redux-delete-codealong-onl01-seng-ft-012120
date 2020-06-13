@@ -9,7 +9,8 @@ export default function manageTodo(state = {
       break
       
     case 'DELETE_TODO':
-      state.
+      return {todos: state.todos.filter(todo => todo !== action.payload)}
+      break
 
     default:
       return state;
